@@ -52,6 +52,8 @@ int main(int argc, char*argv[])
 	if(tell_file1 < 4 || tell_file2 < 4)
 		error(3);
 
+	fclose(file1); fclose(file2);
+
 	num1 = ntohl(num1);
 	num2 = ntohl(num2);
 	uint32_t sum = num1 + num2;	
